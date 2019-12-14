@@ -19,10 +19,9 @@ import javax.swing.JPanel;
  */
 public class Main extends JFrame {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
+    private ImageDisplay imageDisplay;
+    
+    public static void main(String[] args) throws IOException {
         new Main().execute();
     }
 
@@ -52,7 +51,10 @@ public class Main extends JFrame {
     }
 
     private JPanel toolbar() {
-        
+        JPanel panel = new JPanel();
+        panel.add(button("prev"));
+        panel.add(button("next"));
+        return panel;
     }
     
 }

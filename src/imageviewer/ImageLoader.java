@@ -9,10 +9,7 @@ package imageviewer;
  *
  * @author aridai
  */
-interface ImageDislpay {
+public interface ImageLoader {
     
-    public void show(Image image);
-
-    public Image getCurrentImage();
-    
+    public Image load();
 }

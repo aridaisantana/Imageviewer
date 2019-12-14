@@ -9,10 +9,10 @@ package imageviewer;
  *
  * @author aridai
  */
-class Image {
+public interface ImageDisplay {
+    
+    public void show(Image image);
 
-    byte[] data() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    public Image getCurrentImage();
     
 }
