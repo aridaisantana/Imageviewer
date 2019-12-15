@@ -3,23 +3,26 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package imageviewer;
+package imageviewer.controller;
+
+import imageviewer.view.ImageDisplay;
 
 /**
  *
  * @author aridai
  */
-public class PrevCommand implements Command {
+public class NextCommand implements Command {
     
     private final ImageDisplay display;
-            
-    public PrevCommand(ImageDisplay imageDisplay) {
+    
+    public NextCommand(ImageDisplay imageDisplay) {
+        
         this.display = imageDisplay;
     }
 
     @Override
     public void execute() {
-                display.show(display.getCurrentImage().prev());
+        display.show(display.getCurrentImage().next());
 
     }
     

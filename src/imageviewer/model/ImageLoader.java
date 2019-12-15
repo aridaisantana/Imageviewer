@@ -3,16 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package imageviewer;
+package imageviewer.model;
+
+import imageviewer.model.Image;
 
 /**
  *
  * @author aridai
  */
-public interface ImageDisplay {
+public interface ImageLoader {
     
-    public void show(Image image);
-
-    public Image getCurrentImage();
-    
+    public Image load();
 }

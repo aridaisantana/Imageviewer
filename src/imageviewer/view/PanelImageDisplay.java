@@ -3,12 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package imageviewer;
+package imageviewer.view;
 
 /**
  *
  * @author aridai
  */
+import imageviewer.model.Image;
+import imageviewer.view.ImageDisplay;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Rectangle;

@@ -3,9 +3,11 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package imageviewer;
+package imageviewer.model;
 
 
+import imageviewer.model.ImageLoader;
+import imageviewer.model.Image;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.ByteArrayOutputStream;

@@ -1,5 +1,5 @@
 
-package imageviewer;
+package imageviewer.controller;
 
 
 public interface Command {
