@@ -31,7 +31,7 @@ public class FileImageLoader implements ImageLoader {
         this.files = root.listFiles(imageFiles());
     }
 
-   
+    @Override
     public Image load() {
         return imageAt(0);
     }
@@ -49,12 +49,12 @@ public class FileImageLoader implements ImageLoader {
 
     private Image imageAt(int i) {
         return new Image() {
-           
+            @Override
             public String name() {
                 return files[i].getName();
             }
 
-          
+            @Override
             public byte[] data() {
                 try {
                     return load(files[i]);
@@ -63,10 +63,12 @@ public class FileImageLoader implements ImageLoader {
                 }
             }
 
+            @Override
             public Image next() {
                 return imageAt((i+1) % files.length);
             }
 
+            @Override
             public Image prev() {
                 return imageAt((i-1+files.length) % files.length);
             }
