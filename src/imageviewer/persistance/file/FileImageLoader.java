@@ -3,10 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package imageviewer.model;
+package imageviewer.persistance.file;
 
 
-import imageviewer.model.ImageLoader;
+import imageviewer.persistance.ImageLoader;
 import imageviewer.model.Image;
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;

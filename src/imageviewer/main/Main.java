@@ -3,15 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package imageviewer.controller;
+package imageviewer.main;
 
-import imageviewer.model.FileImageLoader;
+import imageviewer.controller.Command;
+import imageviewer.controller.NextCommand;
+import imageviewer.controller.PrevCommand;
+import imageviewer.persistance.file.FileImageLoader;
 import imageviewer.model.Image;
-import imageviewer.view.PanelImageDisplay;
+import imageviewer.view.swing.PanelImageDisplay;
 import imageviewer.view.ImageDisplay;
 import java.awt.BorderLayout;
-import java.awt.Component;
-import java.awt.PopupMenu;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
